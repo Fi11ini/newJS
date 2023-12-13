@@ -1,32 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
-<script>
-let number1 = 100; //100
-let number2 = 200; //200
-let nubmber3 = 300; //300
-let number4 = 2;
-let number5 = 3;
-let sum = number1+number2+nubmber3; //600
 
-alert(sum * number4 /number5);
 
-</script>
-    
+
+
+
+
+
+    <script>
+        let balance = 130;
+        
+        
+        //=====================================
+        document.write('START', '<br>');
+
+
+        let productPrice = window.prompt('How does much product cost?')
+
+        if (balance >= productPrice) {
+            document.write('Product puschased');
+            document.write('<br>','Your balance:',balance - productPrice);
+        } else {
+            document.write('Not enough money')
+        }
+
+        const product2Price = window.prompt('How does much product cost?')
+
+        if (balance >= product2Price) {
+            document.write('<br>', 'Product puschased');
+            document.write('<br>','Your balance:', balance - productPrice - product2Price,);
+        } else {
+            document.write('Not enough monye')
+        }
+
+            const product3Price = window.prompt('How does much product cost?')
+
+            if (balance >= product3Price) {
+                document.write('<br>', 'Product puschased');
+                document.write('<br>', 'Your balance:', balance - productPrice - product2Price - product3Price,);
+            } else {
+                document.write('Not enough monye')
+            }
+
+
+        document.write('<br>', 'END');
+
+    </script>
+
 </body>
+
 </html>
-
-
-
-if (product1Price <= balance) {
-    document.write('Product purchased');
-} else {
-    document.write('Not enough money')
-}
