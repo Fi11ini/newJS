@@ -8,16 +8,49 @@
 </head>
 <body>
 
-<script>
-    document.write('START', '<br>');
 
-    if (false) {
-        document.write('Product purchased');
-    } else {
-        document.write('Not enough money')
-    }
 
-</script>
+
+
+
+
+
+
     
+    <script>
+        let balance = 110;
+//======================================================
+
+        document.write('START', '<br>');
+
+        
+        const product1PriceString = window.prompt('How much does products costs?');
+        const product1Price = window.Number(product1PriceString);
+
+
+                        if (isNaN(product1Price) === false) {
+                            if (balance < product1PriceString) {
+                                document.write('Not enough money');
+                            } else {
+                                document.write('Product purchased');
+                            }
+                        } else {
+                            document.write('You input incorrect number');
+                        }
+
+
+
+
+
+        if (balance < product1Price) {
+            document.write('Not enough money');
+        } else {
+            document.write('Product purchased')
+        }
+
+        
+        document.write('<br>','END')
+    </script>
+        
 </body>
 </html>
