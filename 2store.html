@@ -17,20 +17,27 @@
 
 
     <script>
-        let balance = 130;
+        let balance = 110;
         
         
         //=====================================
         document.write('START', '<br>');
 
 
-        let productPrice = window.prompt('How does much product cost?')
+        let product1PriceString = window.prompt('How does much product cost?');
+        let product1Price = window.Number(product1PriceString);
 
-        if (balance >= productPrice) {
-            document.write('Product puschased');
+        if (true) {
+            if (balance < product1PriceString) {
+                document.write('Product puschased');
+            } else {
+                document.write('Not enough money')
+            }
         } else {
-            document.write('Not enough money')
+            document.write('You input incorrect Number')
         }
+
+
 
         const product2Price = window.prompt('How does much product cost?')
 

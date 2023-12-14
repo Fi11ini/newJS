@@ -28,15 +28,15 @@
         const product1Price = window.Number(product1PriceString);
 
 
-                        if (isNaN(product1Price) === false) {
-                            if (balance < product1PriceString) {
-                                document.write('Not enough money');
+                            if (window.isNaN(product1Price) === false) {
+                                if (balance < product1PriceString) {
+                                    document.write('Not enough money');
                             } else {
-                                document.write('Product purchased');
+                                    document.write('Product purchased');
+                                }
+                            } else {
+                                document.write('You input incorrect number');
                             }
-                        } else {
-                            document.write('You input incorrect number');
-                        }
 
 
 
