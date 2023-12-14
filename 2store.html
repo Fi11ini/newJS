@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+    <script>
+        let balance = 130;
+        
+        
+        //=====================================
+        document.write('START', '<br>');
+
+
+        let productPrice = window.prompt('How does much product cost?')
+
+        if (balance >= productPrice) {
+            document.write('Product puschased');
+        } else {
+            document.write('Not enough money')
+        }
+
+        const product2Price = window.prompt('How does much product cost?')
+
+        if (balance >= product2Price) {
+            document.write('<br>', 'Product puschased');
+        } else {
+            document.write('Not enough monye')
+        }
+
+            const product3Price = window.prompt('How does much product cost?')
+
+            if (balance >= product3Price) {
+                document.write('<br>', 'Product puschased');
+            } else {
+                document.write('Not enough monye')
+            }
+
+
+        document.write(document.write('<br>', 'Your balance:', balance - productPrice - product2Price - product3Price),'<br>', 'END');
+
+    </script>
+
+</body>
+
+</html>

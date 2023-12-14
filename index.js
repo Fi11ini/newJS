@@ -1,10 +1,15 @@
-const objectA = {
-    a: 10,
-    b: true
+
+const Andrey = {
+    age: 31,
+    height: "184 cm",
+    colorOfHear: 'brown'
 }
 
-const copyOfA = objectA
+Andrey.nationality = 'BLR'
 
-copyOfA.a =20
 
-prompt(copyOfA)
+console.log(Andrey)
+
+Andrey.colorOfEyes = 'green'
+
+console.log(Andrey)
