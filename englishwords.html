@@ -77,19 +77,19 @@ if (userAnswer1 ===vocabulary.words.word1.translation) {
     result.correctAnswersCount = result.correctAnswersCount + 1;
 }
 
-const userAnswer2 = prompt(vocabulary.words.word2.original); //2
-alert(userAnswer2 === vocabulary.words.word2.translation );
-if (userAnswer2 === vocabulary.words.word2.translation) {
-    result.correctAnswersCount = result.correctAnswersCount + 1;
-}
+    const userAnswer2 = prompt(vocabulary.words.word2.original); //2
+    alert(userAnswer2 === vocabulary.words.word2.translation);
+    if (userAnswer2 === vocabulary.words.word2.translation) {
+        result.correctAnswersCount = result.correctAnswersCount + 1;
+    }
 
-const userCorrectAnswersMinPercent = result.correctAnswersCount / vocabulary.wordCount * 100;
+    const userCorrectAnswersMinPercent = result.correctAnswersCount / vocabulary.wordCount * 100;
 
-if (userCorrectAnswersMinPercent > settings.correctAnswersMinPercent) {
-    alert(notificationMessages.result.finishSuccess);
-} else {
-    alert(notificationMessages.result.finishUnsuccess);
-}
+    if (userCorrectAnswersMinPercent > settings.correctAnswersMinPercent) {
+        alert(notificationMessages.result.finishSuccess);
+    } else {
+        alert(notificationMessages.result.finishUnsuccess);
+    }
 
 
 
