@@ -1,101 +1,85 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <script>
+
+          const words = [
+                  word0: {
+                      origin: 'Wassup',
+                      translation: 'Здарова'
+                  },
+                  word1: {
+                      original: 'Bye',
+                      translation: 'Покеда'
+                  },
+                  word2: {
+                      original: 'Programmer',
+                      translation: 'Программист'
+                  },
+                  word2: {
+                      original: 'Programmer',
+                      translation: 'Программист'
+                  }
+              ]
+
+
+              const notificationMessages = {
+                  start: {
+                      hello: 'Hello Bro',
+                  },
+                  result: {
+                      finishSuccess: 'Молодец. Good result!',
+                      finishUnsuccess: 'Молодец. Но постарайся лучше!'
+                  }
+              }
+
+          const settings = {
+              correctAnswersMinPercent: 50
+          }
+
+
+          const result = {
+              correctAnswersCount: 0
+          }
 
 
 
 
 
+       //-----------------------------------------
+      alert(notificationMessages.start.hello)
+
+          const userAnswer0 = prompt(words[0].origin); //0
+          alert(userAnswer0 === words[0].translation);
+          if (userAnswer0 === words[0].translation) {
+              result.correctAnswersCount = result.correctAnswersCount + 1;
+          }
 
 
+      const userAnswer1 = prompt(words[1].original); //1
+      alert(userAnswer1 === words[1].translation );
+      if (userAnswer1 ===words[1].translation) {
+          result.correctAnswersCount = result.correctAnswersCount + 1;
+      }
 
+          const userAnswer2 = prompt(words[2].original); //2
+          alert(userAnswer2 === words[2].translation);
+          if (userAnswer2 === words[2].translation) {
+              result.correctAnswersCount = result.correctAnswersCount + 1;
+          }
 
+          const userCorrectAnswersMinPercent = result.correctAnswersCount / words.length * 100;
 
-<script>
-
-    const vocabulary = {
-        words: {
-            word0: {
-                origin: 'Wassup',
-                translation: 'Здарова'
-            },
-            word1: {
-                original: 'Bye',
-                translation: 'Покеда'
-            },
-            word2: {
-                original: 'Programmer',
-                translation: 'Программист'
-            }
-
-        },
-        wordCount: 3
-    }
-
-        const notificationMessages = {
-            start: {
-                hello: 'Hello Bro',
-            },
-            result: {
-                finishSuccess: 'Молодец. Good result!',
-                finishUnsuccess: 'Молодец. Но постарайся лучше!'
-            }
-        }
-
-    const settings = {
-        correctAnswersMinPercent: 50 
-    }
-
-
-    const result = {
-        correctAnswersCount: 0
-    }
-    
-
-
-
-
- //-----------------------------------------
-alert(notificationMessages.start.hello)
-
-    const userAnswer0 = prompt(vocabulary.words.word0.origin); //0
-    alert(userAnswer0 === vocabulary.words.word0.translation);
-    if (userAnswer0 === vocabulary.words.word0.translation) {
-        result.correctAnswersCount = result.correctAnswersCount + 1;
-    }
-
-
-const userAnswer1 = prompt(vocabulary.words.word1.original); //1
-alert(userAnswer1 === vocabulary.words.word1.translation );
-if (userAnswer1 ===vocabulary.words.word1.translation) {
-    result.correctAnswersCount = result.correctAnswersCount + 1;
-}
-
-    const userAnswer2 = prompt(vocabulary.words.word2.original); //2
-    alert(userAnswer2 === vocabulary.words.word2.translation);
-    if (userAnswer2 === vocabulary.words.word2.translation) {
-        result.correctAnswersCount = result.correctAnswersCount + 1;
-    }
-
-    const userCorrectAnswersMinPercent = result.correctAnswersCount / vocabulary.wordCount * 100;
-
-    if (userCorrectAnswersMinPercent > settings.correctAnswersMinPercent) {
-        alert(notificationMessages.result.finishSuccess);
-    } else {
-        alert(notificationMessages.result.finishUnsuccess);
-    }
-
-
-
-
-
-</script>
-    
-</body>
+          if (userCorrectAnswersMinPercent > settings.correctAnswersMinPercent) {
+              alert(notificationMessages.result.finishSuccess);
+          } else {
+              alert(notificationMessages.result.finishUnsuccess);
+          }
+    </script>
+  </body>
 </html>
