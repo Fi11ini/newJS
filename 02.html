@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
-//Массив название книг в бибилиотеке
-    
-    let book1 = 'Война и мир';
-    let book2 = 'Мастер и Маргарита';
-    let book3 = 'Преступление и наказание';
-    //console.log(book2); // 'Мастер и Маргарита' - это вторая книга в списке
+      //Массив название книг в бибилиотеке
 
-    let books = ['Война и мир', 'Мастер и Маргарита', 'Преступление и наказание']
+      let books = [
+        "Война и мир",
+        "Мастер и Маргарита",
+        "Преступление и наказание",
+        "Война Миров"
+      ];
 
-    let masterAndMargoBook = books[1]
-    
-    console.log(masterAndMargoBook)
-    
-    
-    
-    
-    
+      for (let i = 0; i < books.length; i++) {
+        document.write(books[i], '<br>');
+      }
     </script>
-
-</body>
-
+  </body>
 </html>

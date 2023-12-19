@@ -14,7 +14,7 @@
       let person2 = { name: "Иван", surname: "Петров", birthYear: 1985 };
       // console.log(person2.name);
 
-      let persons = [
+      let students = [
         {
           name: "Анна",
           surname: "Смирнова",
@@ -27,9 +27,12 @@
         },
       ];
 
-      let person = persons[1];
+        for(let i = 0; i <students.length; i++) {
+          document.write(students[i].birthYear, '<br>')
+        }
 
-      console.log(persons[0])
+
+
     </script>
   </body>
 </html>
