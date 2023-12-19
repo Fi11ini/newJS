@@ -27,12 +27,41 @@
         ['сок', 'мороженое'],
         ['корм для кота','шампунь']
       ]
+      
+  
+      // extract subarrays from main array  (Достаем листы из главного листа)
+      for (let i = 0; i < shoppingLists.length; i++) {
+        let subarray = shoppingLists[i];
+        for(let j = 0; j <  subarray.length; j++) {
+          let product = subarray[j];
+          document.write(product, '<br>');
+        }
+      }
 
-      let list = shoppingLists[2];
-      let product = list[0];
 
-      console.log(product)
-      console.log(shoppingLists[1][1])
+
+
+
+
+
+
+      let list = shoppingLists[0]; // i =0
+      let product0 = list[0]; // j = 0
+      let product1 = list[1];// j = 1
+      let product2 = list[2];// j = 2
+
+      list = shoppingLists[1];// i = 1
+      product0 = list[0];// j = 0
+      product1 = list[1];// j = 1
+      
+
+      list = shoppingLists[2];// i = 0
+      product0 = list[0];// j = 0
+      product1 = list[1];// j = 1
+
+
+      // console.log(product)
+      // console.log(shoppingLists[1][1])
 
     </script>
   </body>
