@@ -10,29 +10,41 @@
     <script>
       // Массив паспортный данных людей
 
-      let person1 = { name: "Анна", surname: "Смирнова", birthYear: 1990 };
-      let person2 = { name: "Иван", surname: "Петров", birthYear: 1985 };
+      // let person1 = { name: "Анна", surname: "Смирнова", birthYear: 1990 };
+      // let person2 = { name: "Иван", surname: "Петров", birthYear: 1985 };
       // console.log(person2.name);
 
       let students = [
-        {
-          name: "Анна",
-          surname: "Смирнова",
-          birthYear: 1990,
-        },
-        {
-          name: "Иван",
-          surname: "Петров",
-          birthYear: 1985,
-        },
+        [
+          { name: "Andrey", surname: "Krish", age: 31 },
+          { name: "Vadim", surname: "Krish", age: 30 },
+        ],
+        [
+          { name: "Polina", surname: "Krish", age: 29 },
+          { name: "Tonya", surname: "Krish", age: 62 },
+        ],
+        [
+          { name: "Nikita", surname: "Krish", age: 13 },
+          { name: "Marik", surname: "Krish", age: 2 },
+        ],
       ];
 
-        for(let i = 0; i <students.length; i++) {
-          document.write(students[i].birthYear, '<br>')
+      // for(let i = 0; i < students.length; i++ ) {
+      //   let users = students.length[i]
+      //   for(let j = 0; j < users[j]; j++) {
+      //     let users2 = users[j]
+      //     document.write(users[j])
+      //   }
+      // }
+
+      for (let i = 0; i < students.length; i++) {
+        let users = students[i];
+        for (let j = 0; j < users.length; j++) {
+          let user = users[j];
+            console.log(users[j].name, users[j].age, users[j].surname)
+          }
         }
-
-
-
+      
     </script>
   </body>
 </html>
