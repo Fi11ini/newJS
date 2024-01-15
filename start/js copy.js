@@ -1,15 +1,15 @@
-"use strict";
+'use strict';
 
-let array = [1, -4, 7, 9, 12];
-
-function positiveSum(array) {
-    let total = 0;
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] > 0) {
-            total += array[i];
-        }
+function lovefunc(flower1, flower2) {
+    let result;
+    if (flower1 % 2 === 0) {
+        result = true;
+    } else {
+        result = false;
     }
-    return total;
+    return result;
 }
 
-console.log(positiveSum(array)); // return total
+console.log(lovefunc(6, 2));
+
+let;
