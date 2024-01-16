@@ -1,17 +1,18 @@
-'use strickt';
+// const balance = 120;
+// const bonusBalance = 900;
+// const isBanned = true;
+// const isExist = false;
+// const isSelling = false;
 
-let massive = [1, 2, 5, 4];
-let massiveSecond = [2, 3, 5, 5, 5];
-let desert = [];
+// const canBuy = (balance > 1000 || bonusBalance > 100) && !isBanned && !isExist;
+// console.log(`Могу купить игру: ${canBuy ? 'Да' : 'Нет'}`);
 
-function findAverage(numbers) {
-    const initialValue = 0;
-    const sumWithInitial = numbers.reduce(
-        (accumulator, currentValue) => accumulator + currentValue,
-        initialValue
-    );
-    return initialValue;
+const arr = ['hello', 'world', 'this', 'is', 'great'];
+
+function smash(words) {
+    let string = words.join(' ');
+
+    return string;
 }
 
-console.log(findAverage(massive));
-// Expected output: 10
+console.log(smash(arr));
