@@ -7,12 +7,15 @@
 // const canBuy = (balance > 1000 || bonusBalance > 100) && !isBanned && !isExist;
 // console.log(`Могу купить игру: ${canBuy ? 'Да' : 'Нет'}`);
 
-const arr = ['hello', 'world', 'this', 'is', 'great'];
+let array = [1, 2, 3, 5];
 
-function smash(words) {
-    let string = words.join(' ');
-
-    return string;
+function simpleMultiplication(number) {
+    let newNumber = 0;
+    if (number % 2 === 0) {
+        newNumber = number * 8;
+    } else {
+        newNumber = number * 9;
+    }
+    return newNumber;
 }
-
-console.log(smash(arr));
+console.log(simpleMultiplication(1));
