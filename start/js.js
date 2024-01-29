@@ -8,5 +8,4 @@ function doubleChar(str) {
 }
 
 
-
 console.log(doubleChar(string));
