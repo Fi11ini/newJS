@@ -107,11 +107,3 @@ const data = ['truck', 'car', 'car', 'truck', 'bike', 'walk', 'car', 'van', 'bik
 const fruits = ['apples', 'bananas', 'oranges', 'apples', 'grapes', 'bananas', 'peaches',
     'strawberries', 'oranges', 'apricots', 'bananas'];
 
-
-
-
-
-
-
-
-    ddddddddddddddddddddddddddddddd
