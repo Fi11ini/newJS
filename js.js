@@ -1,7 +1,6 @@
-let getFullName = function(firstName, lastName) {
-    return `${firstName} ${lastName}`
+function checkForFactor (base, factor) {
+    return base % factor === 0;
 }
-console.log(getFullName('Andrey', 'Krish'))
 
-
+console.log(checkForFactor(9, 2))
 
