@@ -1,13 +1,11 @@
-function strCount(str, letter) {
-   let arr = str.split('');
-   let count = 0;
-   for (let i = 0; i <arr.length; i++) {
-      if(arr[i] === letter) {
-         count ++
-      }
+function between(a, b) {
+   let arr = [];
 
+   for (let i = a; i <= b; i++) {
+      arr.push(i);
    }
-   return count
+   return arr
 }
 
-console.log(strCount('hellllo', 'l'))
+
+console.log(between(-1, 7))
