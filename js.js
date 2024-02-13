@@ -1,15 +1,9 @@
-var laLigaGoals = 43;
-var championsLeagueGoals = 10;
-var copaDelReyGoals = 5;
-
-var totalGoals = 0;
-
-
-function total (laLigaGoals,championsLeagueGoals,copaDelReyGoals) {
-   return `totalGoals,  ${laLigaGoals + championsLeagueGoals + copaDelReyGoals}`
+function peopleWithAgeDrink(old) {
+   if(old < 14) return 'drink toddy';
+   if(old >= 14 && old < 18) return 'drink coke';
+   if(old >= 18 && old < 21) return 'drink beer';
+   if(old >= 21) return 'drink whisky'
 
 }
 
-
-
-console.log(total(laLigaGoals,championsLeagueGoals,copaDelReyGoals))
+console.log(peopleWithAgeDrink(18))
