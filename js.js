@@ -1,9 +1,11 @@
-function peopleWithAgeDrink(old) {
-   if(old < 14) return 'drink toddy';
-   if(old >= 14 && old < 18) return 'drink coke';
-   if(old >= 18 && old < 21) return 'drink beer';
-   if(old >= 21) return 'drink whisky'
-
+function finalGrade (exam, projects) {
+   if(exam > 90 || projects > 10) {
+      return 100
+   }else if (exam > 75 && projects >= 5) {
+      return 90
+   }else if(exam > 50 && projects >= 2) {
+      return 75
+   } else {
+      return 0
+   }
 }
-
-console.log(peopleWithAgeDrink(18))
